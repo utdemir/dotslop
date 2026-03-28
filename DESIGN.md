@@ -23,6 +23,7 @@ Dotslops is a specification and tooling to notate LLM generated code in a monore
 - `dotslops` CLI tool that can be used to mark files as slops, and some utilities to browse & manage the `.slops` directory.
 - A CLAUDE.md hook that marks all files it edited as "slops".
 - A VSCode extension that marks the "slop" files, and can show the prompt(s) that generated a "slop".
+- I think being able to see them on a GitHub PR would be also very useful - but likely require something like a browser extension or user script.
 
 ## Specification
 
