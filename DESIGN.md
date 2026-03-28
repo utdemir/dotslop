@@ -89,6 +89,8 @@ The `.prompts` is a directory that contains the "prompts" that generated the "sl
 
 Prompts are named by their `PROMPTID` and are plain text files.
 
+This directory is intended to be managed by the tooling, but human-readable.
+
 ## FAQ
 
 ### Specification
