@@ -31,7 +31,7 @@ Dotslops is a specification and tooling to notate LLM generated code in a monore
 A slop is identified by the string:
 
 ```
-@dotslops [#PROMPTID] [tag...]
+@dotslops [#PROMPTID...] [tag...]
 ```
 
 * #PROMPTID is an optional identifier of the prompt that generated the slop
@@ -68,19 +68,19 @@ In JSON files, as they do not support comments, there should be a string value w
 
 #### .slop
 
-Paths under a file can also be marked a slop by having a `.slop` file on a directory, that contains the @dotslop marker, 
-optionally preceded by a glob pattern. ie.
+Paths under a directory can also be marked as slops by having a `.slop` file on a directory, that contains the @dotslop marker preceded by a glob pattern. ie.
 
 Mark all files under a directory as slops:
 
 ```
-@dotslops #PROMPTID tag1 tag2
+* @dotslops #PROMPTID tag1 tag2
 ```
 
 Mark files matching a glob pattern as slops:
 
 ```
-**/*.md @dotslops #PROMPTID tag1 tag2
+**/*.md #PROMPTID tag1 tag2
+**/examples/*.json #PROMPTID tag1 tag2
 ```
 
 ### .prompts
